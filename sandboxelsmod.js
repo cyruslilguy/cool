@@ -9,12 +9,12 @@
 // If it is hosted somewhere else, you can use the full URL, including the HTTPS://.
 
 // Adding elements:
-elements.heavywater = {
+elements.solid = {
     color: "#0e102e",
-    behavior: behaviors.LIQUID,
-    category: "liquids",
+    behavior: behaviors.WALL,
+    category: "special",
     viscosity: 100000,
-    state: "liquid",
+    state: "solid",
     density: 1000000000000000,
 };
 
