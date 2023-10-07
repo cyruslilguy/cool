@@ -9,10 +9,10 @@
 // If it is hosted somewhere else, you can use the full URL, including the HTTPS://.
 
 // Adding elements:
-elements.solid = {
+elements.hold = {
     color: "#0e102e",
     behavior: behaviors.WALL,
-    category: "solid",
+    category: "MyMod",
 };
 
 // Changing existing elements:
