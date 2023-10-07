@@ -12,7 +12,7 @@
 elements.solid = {
     color: "#0e102e",
     behavior: behaviors.WALL,
-    category: "special",
+    category: "solid",
     viscosity: 100000,
     state: "solid",
     density: 1000000000000000,
