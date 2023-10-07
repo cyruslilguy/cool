@@ -1,20 +1,28 @@
-// This is how to add a new mod to the game.
+// Warning: This mod will remove all of your previously unlocked elements.
 
-// Create a new Javascript file like this one.
-// Add the file to the mods folder on GitHub, or host it somewhere else.
-// https://github.com/R74nCom/sandboxels/tree/main/mods
+// loop through the elements object
+if (elements.explosion) {
+    elements.explosion.category = "tools";
+}
+for (var element in elements) {
+    if (elements[element].category !== "tools") {
+        // give the element the hidden attribute true
+        elements[element].hidden = true;
+        // set its category to "alchemy mod"
+        elements[element].category = "alchemy mod";
+    }
+}
 
-// To add it in the Mod Loader:
-// If it is in the mods folder, you can just use the name of the file.
-// If it is hosted somewhere else, you can use the full URL, including the HTTPS://.
+// set the unhide setting to Unlock as Discovered (2)
+settings.unhide = 2;
 
-// Adding elements:
-elements.hold = {
-    color: "#0e102e",
-    behavior: behaviors.WALL,
-    category: "MyMod",
-};
-
-// Changing existing elements:
-elements.water.color = "#ff0000";
-elements.water.behavior = behaviors.WALL;
+// unhide oxygen (air), dirt (earth), fire, and water
+if (!settings.unlocked.alchemymod) {
+    settings.unlocked = {
+        "oxygen": true,
+        "dirt": true,
+        "fire": true,
+        "water": true,
+        "alchemymod": true,
+    };
+}
