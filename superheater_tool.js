@@ -7,5 +7,6 @@ elements.superheater = {
     ],
     temp: 7000,
     category: "tools",
-    insulate:true
+    insulate:true,
+    canPlace: false,
 };
