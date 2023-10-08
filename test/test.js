@@ -1,12 +1,3 @@
-elements.DishSoap = {
-    color: "#eeffba",
-    behavior: behaviors.LIQUID,
-    category: "liquids",
-    viscosity: 100000,
-    state: "liquid",
-    density: 720,
-};
-if (!elements.DishSoap.reactions) { // Include this block once
-    elements.DishSoap.reactions = {} // This creates the property if it doesn't exist
-}
-elements.DishSoap.reactions.water = { "elem1":null, "elem2":"cloud" )
+elements.water.color = "#ff0000",
+elements.water.viscosity = 10000000,
+elements.water.density = 1023390;
