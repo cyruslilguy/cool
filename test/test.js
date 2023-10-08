@@ -5,3 +5,4 @@ elements.superHeater = {
         }
     },
     category: "tools",
+};
