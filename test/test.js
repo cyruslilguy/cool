@@ -1,8 +1,12 @@
-elements.superHeater = {
-    color "#ff0000",
-    tool: function(pixel) {
-            pixel.temp = 500
-        }
-    },
-    category: "tools",
+elements.DishSoap = {
+    color: "#eeffba",
+    behavior: behaviors.LIQUID,
+    category: "liquids",
+    viscosity: 100000,
+    state: "liquid",
+    density: 720,
 };
+if (!elements.DishSoap.reactions) { // Include this block once
+    elements.DishSoap.reactions = {} // This creates the property if it doesn't exist
+}
+elements.DishSoap.reactions.water = { "elem1":null, "elem2":"cloud" )
