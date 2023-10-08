@@ -1,9 +1,8 @@
-// Adding elements:
-elements.wall = {
-    color: "#8a8a8a",
-    behavior: behaviors.WALL,
-    category: "solids",
-    viscosity: 10,
-    state: "liquid",
-    density: 720,
+elements.disintegrator = {
+    color: "#ff0000",
+    tool: function(pixel) {
+            pixel.element = "ash"
+        }
+    },
+    category: "tools",
 };
